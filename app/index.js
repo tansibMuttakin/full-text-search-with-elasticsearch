@@ -1,7 +1,10 @@
 import express from "express";
 import { client } from "./elasticClient.js";
+import cors from "cors";
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);

@@ -26,7 +26,8 @@ docker compose up -d --build --no-cache
 3. Load data to postgresql from a csv file
 
 ``` bash 
-docker compose exec -it app node import_data_to_postgres.js
+docker compose exec -it app node data/import_data_to_postgres.js
 ```
 
-
+4. Test search functionality in the UI
+http://localhost:5173

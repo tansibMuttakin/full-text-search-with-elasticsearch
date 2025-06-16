@@ -14,6 +14,22 @@ services:
       - ./app:/app
     networks:
       - elastic
+  
+  react-app:
+    build:
+      context: ./react-app
+      dockerfile: Dockerfile
+    container_name: react-app
+    ports:
+      - "5173:5173"
+    restart: always
+    # depends_on:
+    #   app:
+    #     condition: service_started
+    volumes:
+      - ./react-app:/app
+    networks:
+      - elastic
 
   db:
     image: postgres
