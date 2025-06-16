@@ -13,14 +13,20 @@ Getting Started
 
 1. Clone the Repository
 
-```bash git clone https://github.com/tansibMuttakin/full-text-search-with-elasticsearch.git```
+```bash 
+git clone https://github.com/tansibMuttakin/full-text-search-with-elasticsearch.git
+```
 
 2. Run docker-compose
 
-``` bash docker compose up -d --build --no-cache```
+``` bash 
+docker compose up -d --build --no-cache
+```
 
 3. Load data to postgresql from a csv file
 
-``` bash docker compose exec -it app node import_data_to_postgres.js```
+``` bash 
+docker compose exec -it app node import_data_to_postgres.js
+```
 
 
